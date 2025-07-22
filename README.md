@@ -1,2 +1,1 @@
-# calculator-app
-Calculator [Projct 3 (FS Mono)]
+# Calculator [Projct 3 (FS Mono)]
