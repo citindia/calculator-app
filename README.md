@@ -1,1 +1,1 @@
-# Calculator [Projct 3 (FS Mono)]
+# Calculator [Project 3 (FS Mono)]
