@@ -1,6 +1,6 @@
 "use client";
 
-import { Divide, Minus, Plus, X } from "lucide-react";
+import { DivideIcon, MinusIcon, PlusIcon, XIcon } from "lucide-react";
 import { useState } from "react";
 import { Button } from "./shadcnui/button";
 import { Input } from "./shadcnui/input";
@@ -69,18 +69,19 @@ const AdvancedCalculator = () => {
 				<SelectTrigger className="w-full">
 					<SelectValue placeholder="Operator" />
 				</SelectTrigger>
+
 				<SelectContent>
 					<SelectItem value="+">
-						<Plus />
+						<PlusIcon />
 					</SelectItem>
 					<SelectItem value="-">
-						<Minus />
+						<MinusIcon />
 					</SelectItem>
 					<SelectItem value="x">
-						<X />
+						<XIcon />
 					</SelectItem>
 					<SelectItem value="/">
-						<Divide />
+						<DivideIcon />
 					</SelectItem>
 				</SelectContent>
 			</Select>

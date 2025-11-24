@@ -1,9 +1,12 @@
 import Header from "@/components/Header/Header";
-import ThemeProvider from "@/components/ThemeProvider";
-import { RootLayoutProps } from "@/lib/types";
+import ThemeProvider from "@/components/Providers/ThemeProvider";
 import "./globals.css";
 
-const RootLayout = ({ children }: RootLayoutProps) => {
+type RootLayoutProps = {
+	children: React.ReactNode;
+};
+
+const RootLayout = ({ children }: Readonly<RootLayoutProps>) => {
 	return (
 		<html
 			lang="en"
@@ -15,9 +18,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
 					enableSystem={false}>
 					<Header />
 
-					<main className="container mx-auto px-6 py-3">
-						{children}
-					</main>
+					<main className="mx-auto max-w-7xl px-6 py-3">{children}</main>
 				</ThemeProvider>
 			</body>
 		</html>

@@ -21,6 +21,7 @@ const page = () => {
 						Advanced Calculator
 					</CardTitle>
 				</CardHeader>
+
 				<CardContent>
 					<AdvancedCalculator />
 				</CardContent>
